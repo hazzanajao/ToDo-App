@@ -10,7 +10,7 @@ let sanitizeHTML = require('sanitize-html')
 
 app.use(express.static('public')) // Helped to access browser.js
 
-let connectionString = 'mongodb+srv://MongodbConnectionString:Ajokemi2021@cluster0.qpwfw.mongodb.net/TodoAppDb?retryWrites=true&w=majority'
+let connectionString = 'mongodb+srv://Username:Password@cluster0.qpwfw.mongodb.net/TodoAppDb?retryWrites=true&w=majority'
 
 mongodb.connect(connectionString, { useNewUrlParser: true }, function(err, client) {
     db = client.db()
